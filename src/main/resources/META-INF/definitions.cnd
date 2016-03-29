@@ -1,0 +1,15 @@
+<html2pdf = 'www.jahia.com'>
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<mix = 'http://www.jcp.org/jcr/mix/1.0'>
+
+[html2pdf:html2PdfCategory] > jmix:droppableContent mixin
+
+[html2pdf:siteSettingsPdfTemplate] > jnt:content, mix:title, jmix:studioOnly, html2pdf:html2PdfCategory, jmix:droppableContent, jmix:hiddenType
+ - pdfCommonProperties (string)
+ - pdfClassDefinition (string)
+ - pdfStyleDefinition (string)
+
+[html2pdf:simplePdf] > jnt:content, html2pdf:html2PdfCategory
+ - pageList (weakreference) multiple
+

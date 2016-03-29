@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
+    <modules jcr:primaryType="jnt:modules">
+        <academy-html2pdf j:dependencies="default"
+                        j:modulePriority="0"
+                        j:moduleType="module"
+                        j:title="Academy HTML2PDF"
+                        jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                        jcr:primaryType="jnt:module">
+                <sources jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                  jcr:primaryType="jnt:moduleVersionFolder"
+                  j:staticMountPointProviderKey="module-academy-html2pdf-1.0-SNAPSHOT">
+                    <src jcr:primaryType="jnt:folder">
+                        <main jcr:primaryType="jnt:folder">
+                            <resources jcr:primaryType="jnt:folder">
+                                <META-INF jcr:primaryType="jnt:metaInfFolder">
+                                    <definitions.cnd jcr:primaryType="jnt:definitionFile"/>
+                                </META-INF>
+                            </resources>
+                        </main>
+                    </src>
+                </sources>
+                
+                <portlets jcr:primaryType="jnt:portletFolder"/>
+                <files jcr:primaryType="jnt:folder"/>
+                <contents jcr:primaryType="jnt:contentFolder"/>
+                <templates j:rootTemplatePath="/base" jcr:primaryType="jnt:templatesFolder">
+                    <files jcr:primaryType="jnt:folder"/>
+                    <contents jcr:primaryType="jnt:contentFolder"/>
+                    <site-settings-base j:hiddenTemplate="false"
+                                j:view="siteSettings"
+                                jcr:primaryType="jnt:template">
+                        <j:translation_en jcr:language="en"
+                                 jcr:mixinTypes="mix:title"
+                                 jcr:primaryType="jnt:translation"
+                                 jcr:title="site settings base"/>
+                        <template-settings-pdf j:applyOn="jnt:virtualsite"
+                                      j:defaultTemplate="false"
+                                      j:hiddenTemplate="false"
+                                      jcr:primaryType="jnt:contentTemplate">
+                            <j:translation_en jcr:language="en"
+                                    jcr:mixinTypes="mix:title"
+                                    jcr:primaryType="jnt:translation"
+                                    jcr:title="Template Settings PDF"/>
+                            <pagecontent jcr:primaryType="jnt:contentList">
+                                <pdf-template-settings-1 jcr:primaryType="html2pdf:siteSettingsPdfTemplate">
+                                    <j:translation_en jcr:language="en"
+                                          jcr:mixinTypes="mix:title"
+                                          jcr:primaryType="jnt:translation"
+                                          jcr:title="PDF Template Settings 1"/>
+                                </pdf-template-settings-1>
+                            </pagecontent>
+                        </template-settings-pdf>
+                    </site-settings-base>
+                </templates>
+                
+            </academy-html2pdf>
+    </modules>
+</content>
