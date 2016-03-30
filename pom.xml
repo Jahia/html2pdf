@@ -81,11 +81,11 @@
         <version>7.1.0.1</version>
     </parent>
     <groupId>org.jahia.modules</groupId>
-    <artifactId>academy-html2pdf</artifactId>
-    <name>Academy HTML2PDF</name>
+    <artifactId>html2pdf</artifactId>
+    <name>HTML2PDF</name>
     <version>1.0-SNAPSHOT</version>    
     <packaging>bundle</packaging>
-    <description>This is the custom module (Academy HTML2PDF) for running on a Digital Factory server.</description>
+    <description>A prototype to evaluate PDFBox as the converter from an HTML page to a PDF document.</description>
 
     <scm>
         <connection>scm:dummy:uri</connection>

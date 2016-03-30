@@ -1,4 +1,4 @@
-package org.jahia.modules.academyhtml2pdf.rules
+package org.jahia.modules.html2pdf.rules
 
 // list any import classes here.
 import org.jahia.services.content.rules.*
